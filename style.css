@@ -102,18 +102,29 @@ footer {
     justify-content: center;
     align-self: flex-start;
     line-height: 2rem;
+    margin-bottom: 20px;
 }
 
 .bottom-footer{
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding: 50px;
-    border-top: solid black;
+    justify-content: center;
 }
 
 .info-web-ul{
     display: flex;
     justify-content: center;
     padding: 2rem;
+}
+
+.info-bottom-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center  ;
+    border-top: solid 1px rgb(177, 175, 175);
+    width: 50%;
+    padding: 40px;
+}
+
+.copy-code {
+    font-size: 10px;
 }

@@ -115,16 +115,30 @@ main section div button {
 
 footer {
     box-shadow: 0px 1.5px 12px rgb(179, 177, 177);
-
+    margin-top: 0.3rem;
 }
 
-.info-footer {
+.footer-top{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.info-footer-izq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: flex-start;
-    line-height: 2rem;
-    margin-bottom: 50px;
+    line-height: 3rem;
+    padding: 30px;
+    gap: 3rem;
+    margin-left: 12rem;
+}
+
+.info-footer-der{
+    margin-right: 12rem;
+    padding: 40px;
 }
 
 .bottom-footer{

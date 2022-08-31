@@ -35,9 +35,29 @@ nav ul {
 
 nav li{
     padding: 2rem;
+    border-style:  solid;
+    border-color: white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-width: 5px;
 }
 
 nav li:hover {
+    border-color: brown;
+    color: brown;   
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-width: 5px;
+}
+.style-nav {
+    background-color: black;
+    width: 2rem;
+    position:static;
+}
+
+.active {
     color: brown;
     border-style: solid;
     border-left: 0px;

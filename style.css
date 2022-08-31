@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     height: 5.5rem;
     align-items: center;
     box-shadow: 10px 0.01px 8px rgb(179, 177, 177);
-    position: relative;
 }
 
 .nav-izq {
@@ -27,7 +34,6 @@ nav ul {
 }
 
 nav li{
-    list-style: none;
     padding: 2rem;
 }
 
@@ -85,7 +91,29 @@ main section div button {
     padding: 5px;
 }
 
-footer div {
-    height: 25vh;
+footer {
     box-shadow: 10px 0.01px 8px rgb(179, 177, 177);
+
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    line-height: 2rem;
+}
+
+.bottom-footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    border-top: solid black;
+}
+
+.info-web-ul{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }

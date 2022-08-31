@@ -54,12 +54,35 @@ main section div {
     background-color: rgb(214, 214, 214);
     height: 25rem;
     width: 43.7rem;
+    display: flex;
+    justify-content: center;
 }
 
 main .section-1 {
     background-color: rgb(191, 174, 174);
     height: 21.3rem;
     width: 43.7rem;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28vw;
+    text-align: center;
+    gap: 2rem;
+    line-height: 2rem;
+}
+
+main section div button {
+    border-radius: 18px;
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(214, 214, 214); 
+    color: black;
+    width: fit-content;
+    align-self:center ;
+    padding: 5px;
 }
 
 footer div {

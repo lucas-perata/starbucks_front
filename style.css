@@ -17,7 +17,7 @@ nav{
     justify-content: space-around;
     height: 5.5rem;
     align-items: center;
-    box-shadow: 10px 0.01px 8px rgb(179, 177, 177);
+    box-shadow: 0px 0.01px 5px rgb(179, 177, 177);
 }
 
 .nav-izq {
@@ -50,6 +50,7 @@ nav li:hover {
     border-right: 0px;
     border-top: 0px;
     border-width: 5px;
+    cursor: pointer;
 }
 .style-nav {
     background-color: black;
@@ -58,11 +59,12 @@ nav li:hover {
 }
 
 .active {
-    color: brown;
-    border-style: solid;
+    border-color: brown;
+    color: brown;   
     border-left: 0px;
     border-right: 0px;
     border-top: 0px;
+    border-width: 5px;
 }
 
 main section {
@@ -112,7 +114,7 @@ main section div button {
 }
 
 footer {
-    box-shadow: 10px 0.01px 8px rgb(179, 177, 177);
+    box-shadow: 0px 1.5px 12px rgb(179, 177, 177);
 
 }
 
@@ -122,7 +124,7 @@ footer {
     justify-content: center;
     align-self: flex-start;
     line-height: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .bottom-footer{
@@ -140,11 +142,48 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center  ;
-    border-top: solid 1px rgb(177, 175, 175);
-    width: 50%;
+    border-top: solid 1px rgb(219, 215, 215);
+    width: 60%;
     padding: 40px;
 }
 
 .copy-code {
     font-size: 10px;
 }
+
+@media only screen and (max-width: 750px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
+    main .section-1 {
+        background-color: rgb(191, 174, 174);
+        height: 6rem;
+        width: 43.7rem;
+    }
+
+    main .second {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .text-section {
+        width: 100vw;
+        flex-wrap: nowrap;
+        height: 10rem;
+    }
+    main section div {
+        height: 12rem;
+    }
+    .section-3{
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+  }

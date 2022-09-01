@@ -217,6 +217,8 @@ i:hover{
     }
     .navbar-mobile {
         display: flex;
+        box-shadow: 5px 0.01px 5px rgb(179, 177, 177);
+        position: relative;
     }
     .nav-der-mobile{
         display: flex;

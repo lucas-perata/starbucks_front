@@ -216,7 +216,7 @@ i:hover{
         display: none;
     }
     .navbar-mobile {
-        display: block;
+        display: flex;
     }
     .nav-der-mobile{
         display: flex;
@@ -238,7 +238,7 @@ i:hover{
     main .section-1 {
         background-color: rgb(191, 174, 174);
         height: 6rem;
-        width: 43.7rem;
+        width: 100%;
     }
 
     main .second {
@@ -254,8 +254,14 @@ i:hover{
     main section div {
         height: 12rem;
     }
+    #section-2{
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .section-3{
-        height: 20rem;
+        height: 23.5rem;
         display: flex;
         flex-direction: column;
     }

@@ -215,9 +215,10 @@ i:hover{
         display: none;
     }
     .navbar-mobile {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
         box-shadow: 5px 0.01px 5px rgb(179, 177, 177);
-        position: relative;
     }
     .nav-der-mobile{
         display: flex;
@@ -305,7 +306,6 @@ i:hover{
       }
 
       .hamburger {
-        position: fixed;
         z-index: 100;
         top: 1rem;
         right: 1rem;

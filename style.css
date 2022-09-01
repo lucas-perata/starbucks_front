@@ -280,13 +280,22 @@ i:hover{
 
     .footer-mobile {
         display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown {
+        padding: 20px;
     }
 
     .footer-top{
         display: none;
     }
-  }
 
-  .btn-footer {
-    display:none;
+      .dropdown-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        padding: 15px;
+      }
   }

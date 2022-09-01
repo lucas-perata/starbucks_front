@@ -31,7 +31,6 @@ li {
 .nav-izq {
     display: flex;
     flex-direction: row;
-    margin-left: 8rem;
 }
 
 .navbar-desktop .img {
@@ -85,7 +84,7 @@ font-size: 1.5rem;
 }
 
 .nav-der {
-    margin-right: 10rem;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
 }

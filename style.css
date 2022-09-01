@@ -15,8 +15,8 @@ li {
 .logo {
     align-items: center;
     align-self: center;
-    width: 6rem;
-    height: 4rem;
+    width: 6.1rem;
+    height: 3.3rem;
 }
 
 nav{
@@ -30,10 +30,15 @@ nav{
 .nav-izq {
     display: flex;
     flex-direction: row;
+    margin-left: 8rem;
 }
 
 nav.img {
     background-color: black;
+}
+
+nav i::before{
+font-size: 1.5rem;
 }
 
 nav ul {
@@ -72,6 +77,12 @@ nav li:hover {
     border-right: 0px;
     border-top: 0px;
     border-width: 5px;
+}
+
+.nav-der {
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
 }
 
 main section {
@@ -179,7 +190,7 @@ i:hover{
     text-align: center  ;
     border-top: solid 1px rgb(219, 215, 215);
     width: 60%;
-    padding: 40px;
+    padding: 20px;
 }
 
 .copy-code {

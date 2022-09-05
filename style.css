@@ -1,9 +1,25 @@
 /* GENERAL */
 
+@font-face {
+  font-family: "SoDo Sans SemiBold";
+  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot");
+  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold")
+      format("svg");
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "SoDo Sans SemiBold";
 }
 
 body {
@@ -41,6 +57,7 @@ li {
   align-items: center;
   box-shadow: 0px 0.01px 5px rgb(179, 177, 177);
   position: relative;
+  font-size: 15px;
 }
 
 .nav-izq {
@@ -102,6 +119,17 @@ li {
   margin-right: 2rem;
   display: flex;
   align-items: center;
+  flex-direction: row;
+}
+
+.nav-der i {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-der p {
+  font-weight: 700;
+  align-self: center;
 }
 
 .navbar-mobile {
@@ -141,22 +169,28 @@ main .section-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 28vw;
+  width: 29vw;
   text-align: center;
   gap: 2rem;
-  line-height: 2rem;
+  line-height: 33px;
+}
+
+.text-section p {
+  color: #006241;
+  font-size: 19px;
 }
 
 main section div button {
   border-radius: 18px;
   border-style: solid;
-  border-color: black;
+  border-color: #006241;
   background-color: #f1f8f6;
   color: black;
   width: fit-content;
   align-self: center;
   padding: 5px;
   font-size: 1rem;
+  color: #006241;
 }
 
 main section div button:hover {
@@ -175,28 +209,25 @@ footer {
 .footer-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 25px;
+  margin-bottom: 20px;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .info-footer-izq {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  line-height: 1.5rem;
-  padding: 30px;
+  padding: 25px;
   gap: 3rem;
-  margin-left: 12rem;
 }
 
 .text-footer {
-  color: #858282;
+  color: #a5a0a0;
 }
 
 .text-footer:hover {
@@ -204,9 +235,8 @@ footer {
   cursor: pointer;
 }
 
-.info-footer-der {
-  margin-right: 12rem;
-  padding: 40px;
+.img-footer-der {
+  padding: 20px;
 }
 
 .footer-mobile {
@@ -245,7 +275,7 @@ i:hover {
   text-align: center;
   border-top: solid 1px rgb(219, 215, 215);
   width: 60%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .copy-code {
@@ -400,6 +430,7 @@ i:hover {
 
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
+  color: rgb(167, 162, 162);
 }
 
 @keyframes sweep {

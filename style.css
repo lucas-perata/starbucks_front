@@ -46,7 +46,7 @@ li {
 .logo {
   align-items: center;
   align-self: center;
-  width: 6.1rem;
+  width: 5.9rem;
   height: 3.3rem;
 }
 
@@ -266,7 +266,18 @@ i:hover {
 .info-web-ul {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: rgb(191, 191, 191);
+}
+
+.info-web-ul li {
+  padding: 10px;
+}
+
+.info-web-ul li:hover {
+  cursor: pointer;
+  color: rgb(163, 162, 162);
 }
 
 .info-bottom-footer {
@@ -275,15 +286,25 @@ i:hover {
   text-align: center;
   border-top: solid 1px rgb(219, 215, 215);
   width: 60%;
-  padding: 40px;
+  padding-top: 40px;
+}
+
+.copyright {
+  color: rgb(191, 191, 191);
+  line-height: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.copy-year {
+  font-size: 15px;
 }
 
 .copy-code {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 /************************************************************************************************/
-/********************************************* RESPONSIVENESS */
+/********************************************* MOBILE */
 /************************************************************************************************/
 
 @media only screen and (max-width: 850px) {
@@ -421,6 +442,18 @@ i:hover {
   .show-menu {
     transform: translateY(0);
     transition: transform 0.2s;
+  }
+
+  .info-bottom-footer {
+    width: 100%;
+  }
+
+  .info-web-ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .copyright {
+    line-height: 15px;
   }
 }
 
